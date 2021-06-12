@@ -2,15 +2,84 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>Edith Benvenuto</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/icon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto+Condensed:wght@300;400;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <header>
+    <nav class="navbar">
+      <div class="name" href="index.html">Edith Benvenuto</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div id="content">
+        <div class="row">
+          <div class="col home">
+            <img id="photo" src="images/edithbenvenuto.jpeg" alt="Edith Benvenuto">
+          </div>
+          <div class="col home">
+            <p id="title">Hi! I'm Edith</p>
+            <p id="subtitle">I'm a Student of B.S. in Computer Science and Technology Engineering at Tecnológico de Monterrey</p>
+          </div>
+        </div>
+        <div id="aboutMe">
+            <h3>About me</h3>
+            <button id="randomFactsButton" onclick="addRandomFact()">Random Fact</button>
+            <div id="greeting-container-fact"></div>
+        </div>
+        <div>
+          <h3>Projects</h3>
+        </div>
+        <div>
+          <h3>Contact</h3>
+        </div>
+    </div>
+  </body> 
+  <script src="script.js"></script>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');</style>  
   </head>
+  <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a id="name" href="index.html">Edith Benvenuto</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
   <body>
     <div id="content">
       <h1>My Portfolio</h1>
       <h3>Hi! my name is Edith Benvenuto. I am from Veracruz Mexico</h3>
-      <img src="./images/07-03-2021.jpeg" />
       <p>This is my portfolio.</p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
@@ -18,4 +87,4 @@
       <div id="greeting-container"></div>
     </div>
   </body>
-</html>
+</html> -->
