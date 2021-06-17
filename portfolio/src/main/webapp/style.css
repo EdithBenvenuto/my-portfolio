@@ -4,26 +4,40 @@
     box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   padding: 0;
 }
 
 .navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   display:flex;
-  position: relative;
   justify-content:space-evenly;
   align-items: center;
   background-color: white;
-  color: black;
-  
+  color: black;  
+  z-index: 15;
 }
 
 .name{
   font-size: 2rem;
   margin:0.5rem;
   font-weight:bold;
-  color: #b37069;
+  text-decoration: none;
+  /* color: #b37069; */
+  color: #4d4d4d; 
+}
+
+.name:hover{
+  text-decoration: none;
+  color:#b37069;
 }
 
 .navbar-links ul{
@@ -47,6 +61,7 @@ body{
 
 .navbar-links a:hover{
     color:#7F867B;
+    
 }
 
 .toggle-button {
@@ -68,7 +83,7 @@ body{
   border-radius: 10px;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .toggle-button{
       display: flex;
     }
@@ -103,24 +118,28 @@ body{
 
 #content {
   margin: 0 auto;
-  margin-top: 4rem;
   width: 60%;
 }
+/* Home section------------------------ */
 
-#greeting-container {
-  margin-top: 20px;
+#homeSection{
+  margin-bottom: 4rem;
+  margin-top: 8rem;
 }
 
 #photo{
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
-  border-radius: 5%;
+  border-radius: 1rem; 
+  float: left;
 }
 
 .home{
   text-align: center;
-  padding-top: auto;
-  padding-bottom: auto;
+}
+
+.homeInfo{
+  padding-top:3rem;
 }
 
 #title{
@@ -132,3 +151,123 @@ body{
   color:#283618;
 }
 
+.socialIcons{
+  text-align: center;
+  font-size: 30px;
+}
+
+.sIcon {
+  color:#000000;
+  margin: 1rem;
+}
+
+.sIcon:hover {
+  color:#b37069;
+}
+/* About me section------------------------ */
+
+#aboutMeSection{
+  margin: 4rem 0;
+  text-align: center;
+}
+
+#cv, #randomFactsButton{
+  text-decoration: none;
+  color:black;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+}
+
+#cv:hover, #randomFactsButton:hover{
+  text-decoration: none;
+  color:#b37069;
+  padding: 0.5rem 1rem;
+  border: 2px solid #b37069;
+  border-radius: 0.5rem;
+  background-color: #fcfcfc;
+}
+
+#greeting-container-fact{
+  padding-top: 1rem;
+}
+
+#aboutmephoto{
+  border-radius: 0.5rem;
+  max-width: 60%;
+  height: auto;
+  float: right;
+}
+
+#aboutMeSection .row{
+  padding-top: 3rem;
+}
+
+#aboutMeSection h3{
+  font-size: 2rem;
+}
+
+/* Projects section------------------------ */
+
+#projectsSection{
+  margin: 4rem 0;
+  text-align: center;
+}
+
+#projects{
+  text-align: center;
+}
+
+.projectImg {
+  /* float: left; */
+  display: inline-block;
+  width:  21rem;
+  height: 12rem;
+  object-fit: cover;
+  background-size: cover;
+  margin: 1rem;
+  border-radius: 1rem;
+  filter: grayscale(100%);
+
+  transition: transform .5s;
+}
+
+.projectImg:hover{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Contact section------------------------ */
+
+#contactSection{
+  margin: 4rem 0;
+  text-align: center;
+}
+
+
+/* Footer section ---------------------- */
+
+footer{
+  height: 8rem;
+  width: 100%;
+  background-color: #ddb3af;
+}
+
+.socialIconsFooter{
+  text-align: center;
+  font-size: 30px;
+  background-color: #ddb3af;
+}
+
+.socialIconsFooter i{
+  background-color: #ddb3af;
+}
+
+.sIconFooter {
+  color:#925a55;
+  margin: 1rem;
+}
+
+.sIconFooter:hover {
+  color:#f5f5f5;
+}
