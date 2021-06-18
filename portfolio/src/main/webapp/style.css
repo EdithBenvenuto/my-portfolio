@@ -221,7 +221,7 @@ body{
 .projectImg {
   /* float: left; */
   display: inline-block;
-  width:  21rem;
+  width:  16rem;
   height: 12rem;
   object-fit: cover;
   background-size: cover;
@@ -244,10 +244,46 @@ body{
   text-align: center;
 }
 
+.contactLeft img{
+  object-fit: contain;
+}
+
+.contactRight label, input, textarea{
+  display: block;
+}
+
+.contactRight label{
+  text-align: left;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contactSubmit{
+  text-decoration: none;
+  color:black;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+}
+
+#contactSubmit:hover{
+  color:#b37069;
+  border: 2px solid #b37069;
+}
+
 
 /* Footer section ---------------------- */
 
 footer{
+  margin-top: 1rem;
   height: 8rem;
   width: 100%;
   background-color: #ddb3af;
