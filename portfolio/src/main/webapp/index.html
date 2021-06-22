@@ -88,17 +88,18 @@
                 <img src="images/workplace.jpg" style="width:100%">
               </div>
               <div class="col-7 contactRight">
-                <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                <form method="POST" action="/new-message">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="name" placeholder="Your name...">
                   <label for="country">Country</label>
-                  <input type="text" id="country" name="country" placeholder="Your country...">
+                  <input type="email" id="email" name="email" placeholder="Your email...">
                   <label for="Comments">Comments</label>
-                  <textarea id="Comments" name="Comments" placeholder="Write something.." style="height:170px"></textarea>
+                  <textarea id="Comments" name="comment" placeholder="Write something.." style="height:170px"></textarea>
                   <input id="contactSubmit" type="submit" value="Submit">
                 </form>
               </div>
             </div>
+            <a href="html/list-messages.html">messages</a>
           </div>
         </div>
     </div>

@@ -1,0 +1,9 @@
+*{
+    background-color: white;
+    font-family: 'Signika', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
